@@ -1,0 +1,29 @@
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Configure stats pid to 90542
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Loading settings from /local/home/jiatang/.config/wandb/settings
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Loading settings from /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/wandb/settings
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py', 'program_abspath': '/local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py', 'program': '/local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py'}
+2024-07-20 17:58:46,170 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:_log_setup():529] Logging user logs to /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175846-z1ktmukx/logs/debug.log
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:_log_setup():530] Logging internal logs to /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175846-z1ktmukx/logs/debug-internal.log
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:init():569] calling init triggers
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'lr': 0.0005, 'step_size': 2000, 'gamma': 0.8, 'hid_lay_num': 5, 'kernel_size': 3, 'neu_num': 256, 'dic_neu_num': 64, 'dic_lay_num': 0, 'in_dim': 10, 'epoch': 4000, 'echo_step': 50, 'cs_pena': 1.0, 'time_fac': 1.0, 'rand_seed': 3024, 'speedup_rate': [1.0], 'batch_size': 4, 'drop': 0.5, 'tot_t': 16, 'retrain': True}
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:init():619] starting backend
+2024-07-20 17:58:46,171 INFO    MainThread:90542 [wandb_init.py:init():623] setting up manager
+2024-07-20 17:58:46,173 INFO    MainThread:90542 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-20 17:58:46,175 INFO    MainThread:90542 [wandb_init.py:init():631] backend started and connected
+2024-07-20 17:58:46,179 INFO    MainThread:90542 [wandb_init.py:init():720] updated telemetry
+2024-07-20 17:58:46,186 INFO    MainThread:90542 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-20 17:58:46,653 INFO    MainThread:90542 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-20 17:58:46,810 INFO    MainThread:90542 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-20 17:58:46,811 INFO    MainThread:90542 [wandb_init.py:init():804] starting run threads in backend
+2024-07-20 17:58:49,776 INFO    MainThread:90542 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-20 17:58:49,776 INFO    MainThread:90542 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-20 17:58:49,776 INFO    MainThread:90542 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-20 17:58:49,776 INFO    MainThread:90542 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-20 17:58:49,777 INFO    MainThread:90542 [wandb_init.py:init():847] run started, returning control to user process

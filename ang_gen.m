@@ -1,0 +1,96 @@
+function PlaneAng(data,f_name)
+    
+    fid=fopen(f_name,'wt');
+    fprintf(fid,'# x-star                    0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# y-star                    0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# z-star                    0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# WorkingDistance           15.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'#  ');
+    fprintf(fid,'\r');
+    fprintf(fid,'# InterplanarTolerance      3.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# SEMVoltage                20.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# SEMVoltage                20.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# PhaseDiffFactor_Votes     1');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# PhaseDiffFactor_Fit       0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# PhaseDiffFactor_CI        0');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# PhaseDiffFactor_BandWidth 0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# CI_CalcMethod             0');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# Use Band Widths           0');
+    fprintf(fid,'\r');
+    fprintf(fid,'#');
+    fprintf(fid,'\r');
+    fprintf(fid,'# MaterialName   liquid');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# Formula     Unknow');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Info ');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Symmetry              43');
+    fprintf(fid,'\r');
+    fprintf(fid,'# LatticeConstants      3.560 3.560 3.560  90.000  90.000  90.000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# NumberFamilies        0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# ElasticConstants -1.000000 -1.000000 -1.000000 -1.000000 -1.000000 -1.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'#');
+    fprintf(fid,'\r');
+    fprintf(fid,'# MaterialName   solid');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# Formula     Unknow');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Info ');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Symmetry              43');
+    fprintf(fid,'\r');
+    fprintf(fid,'# LatticeConstants      3.560 3.560 3.560  90.000  90.000  90.000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# NumberFamilies        0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# ElasticConstants -1.000000 -1.000000 -1.000000 -1.000000 -1.000000 -1.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'#');
+    fprintf(fid,'\r');
+    fprintf(fid,'# MaterialName   powder');
+    fprintf(fid,'\r');
+    fprintf(fid,    '# Formula     Unknow');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Info ');
+    fprintf(fid,'\r');
+    fprintf(fid,'# Symmetry              43');
+    fprintf(fid,'\r');
+    fprintf(fid,'# LatticeConstants      3.560 3.560 3.560  90.000  90.000  90.000');
+    fprintf(fid,'\r');
+    fprintf(fid,'# NumberFamilies        0');
+    fprintf(fid,'\r');
+    fprintf(fid,'# ElasticConstants -1.000000 -1.000000 -1.000000 -1.000000 -1.000000 -1.000000');
+    fprintf(fid,'\r');
+    fprintf(fid,'#');
+    fprintf(fid,'\r');
+    fprintf(fid,'# GRID: SqrGrid');
+    fprintf(fid,'\r');
+    fprintf(fid,'#');
+    fprintf(fid,'\r');
+    BC=10;BS=0.9;MAD=0.5;UN=1;
+    [LI,~]=size(data);
+    for i=1:LI
+    fprintf(fid,'%f ',data(i,1:3),data(i,5:end),BC,BS,data(i,4),UN,MAD);
+    fprintf(fid,'\r');
+    end
+    fclose(fid);    
+    
+    
+end
+

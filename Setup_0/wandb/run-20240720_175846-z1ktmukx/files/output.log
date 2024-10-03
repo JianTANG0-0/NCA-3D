@@ -1,0 +1,475 @@
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 264.00 MiB. GPU  has a total capacity of 23.66 GiB of which 61.44 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 520.00 MiB. GPU  has a total capacity of 23.66 GiB of which 61.44 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 776.00 MiB. GPU  has a total capacity of 23.66 GiB of which 61.44 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 520.00 MiB. GPU  has a total capacity of 23.66 GiB of which 77.56 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 520.00 MiB. GPU  has a total capacity of 23.66 GiB of which 78.88 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 264.00 MiB. GPU  has a total capacity of 23.66 GiB of which 78.88 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 776.00 MiB. GPU  has a total capacity of 23.66 GiB of which 78.88 MiB is free. Including non-PyTorch memory, this process has 23.34 GiB memory in use. Of the allocated memory 22.26 GiB is allocated by PyTorch, and 735.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Exception raised from malloc at /opt/conda/conda-bld/pytorch_1712608839953/work/c10/cuda/CUDACachingAllocator.cpp:1143 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x57 (0x7f116cde8897 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x35a9f (0x7f116cea5a9f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x35c87 (0x7f116cea5c87 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x360c7 (0x7f116cea60c7 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libc10_cuda.so)
+frame #4: <unknown function> + 0x10891a2 (0x7f116df9b1a2 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x108f133 (0x7f116dfa1133 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x1091043 (0x7f116dfa3043 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x10915bb (0x7f116dfa35bb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #8: <unknown function> + 0x1074062 (0x7f116df86062 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #9: at::native::cudnn_convolution(at::Tensor const&, at::Tensor const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, long, bool, bool, bool) + 0x53f (0x7f116df86a2f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #10: <unknown function> + 0x32e781e (0x7f11701f981e in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #11: <unknown function> + 0x32fefd1 (0x7f1170210fd1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cuda.so)
+frame #12: at::_ops::cudnn_convolution::call(at::Tensor const&, at::Tensor const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool) + 0x2bb (0x7f11c305560b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #13: at::native::_convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long, bool, bool, bool, bool) + 0x13cb (0x7f11c22901eb in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #14: <unknown function> + 0x2a8d27f (0x7f11c341e27f in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #15: <unknown function> + 0x2a93bdc (0x7f11c3424bdc in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #16: at::_ops::_convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt, bool, bool, bool, bool) + 0x344 (0x7f11c2b670d4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #17: at::native::convolution(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<long>, c10::ArrayRef<long>, c10::ArrayRef<long>, bool, c10::ArrayRef<long>, long) + 0x3b8 (0x7f11c2283868 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #18: <unknown function> + 0x2a8cb1c (0x7f11c341db1c in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #19: <unknown function> + 0x2a93a48 (0x7f11c3424a48 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #20: at::_ops::convolution::redispatch(c10::DispatchKeySet, at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x17b (0x7f11c2b24d6b in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #21: <unknown function> + 0x41902e1 (0x7f11c4b212e1 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #22: <unknown function> + 0x4191259 (0x7f11c4b22259 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #23: at::_ops::convolution::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, bool, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x2d4 (0x7f11c2b65ed4 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #24: <unknown function> + 0x164a2e0 (0x7f11c1fdb2e0 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #25: at::native::conv3d_symint(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x179 (0x7f11c22876d9 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #26: <unknown function> + 0x2c84f23 (0x7f11c3615f23 in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #27: <unknown function> + 0x2c8505d (0x7f11c361605d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #28: at::_ops::conv3d::call(at::Tensor const&, at::Tensor const&, std::optional<at::Tensor> const&, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::ArrayRef<c10::SymInt>, c10::SymInt) + 0x26e (0x7f11c3052aee in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #29: <unknown function> + 0x6eac6d (0x7f11cda50c6d in /local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #30: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x4fd907]
+frame #31: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #32: _PyEval_EvalFrameDefault + 0x53d6 (0x4f3106 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #33: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5095ce]
+frame #34: _PyEval_EvalFrameDefault + 0x4b26 (0x4f2856 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #35: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #36: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #37: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #38: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #39: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #40: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #41: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #42: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #43: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #44: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #45: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #46: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #47: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #48: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #49: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #50: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #51: PyObject_Call + 0x209 (0x50a259 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #52: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #53: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #54: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #55: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #56: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #57: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x509726]
+frame #58: _PyEval_EvalFrameDefault + 0x2b79 (0x4f08a9 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #59: _PyObject_FastCallDictTstate + 0xcd (0x4f63ad in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #60: _PyObject_Call_Prepend + 0x66 (0x507b36 in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #61: /local/home/jiatang/miniconda3/envs/pytorch/bin/python() [0x5cf913]
+frame #62: _PyObject_MakeTpCall + 0x25b (0x4f705b in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+frame #63: _PyEval_EvalFrameDefault + 0x4dde (0x4f2b0e in /local/home/jiatang/miniconda3/envs/pytorch/bin/python)
+ (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)

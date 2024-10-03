@@ -1,0 +1,102 @@
+2024-07-20 17:58:45,497 INFO    StreamThr :90596 [internal.py:wandb_internal():85] W&B internal server running at pid: 90596, started at: 2024-07-20 17:58:45.496300
+2024-07-20 17:58:45,501 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status
+2024-07-20 17:58:45,504 INFO    WriterThread:90596 [datastore.py:open_for_write():87] open: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/run-ac58ryct.wandb
+2024-07-20 17:58:45,505 DEBUG   SenderThread:90596 [sender.py:send():379] send: header
+2024-07-20 17:58:45,509 DEBUG   SenderThread:90596 [sender.py:send():379] send: run
+2024-07-20 17:58:45,934 INFO    SenderThread:90596 [dir_watcher.py:__init__():211] watching files in: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files
+2024-07-20 17:58:45,934 INFO    SenderThread:90596 [sender.py:_start_run_threads():1188] run started: ac58ryct with start time 1721491125.495998
+2024-07-20 17:58:45,954 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: check_version
+2024-07-20 17:58:45,954 DEBUG   SenderThread:90596 [sender.py:send_request():406] send_request: check_version
+2024-07-20 17:58:46,105 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: run_start
+2024-07-20 17:58:46,141 DEBUG   HandlerThread:90596 [system_info.py:__init__():26] System info init
+2024-07-20 17:58:46,141 DEBUG   HandlerThread:90596 [system_info.py:__init__():41] System info init done
+2024-07-20 17:58:46,141 INFO    HandlerThread:90596 [system_monitor.py:start():194] Starting system monitor
+2024-07-20 17:58:46,141 INFO    SystemMonitor:90596 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-20 17:58:46,143 INFO    HandlerThread:90596 [system_monitor.py:probe():214] Collecting system info
+2024-07-20 17:58:46,144 INFO    SystemMonitor:90596 [interfaces.py:start():188] Started cpu monitoring
+2024-07-20 17:58:46,145 INFO    SystemMonitor:90596 [interfaces.py:start():188] Started disk monitoring
+2024-07-20 17:58:46,146 INFO    SystemMonitor:90596 [interfaces.py:start():188] Started gpu monitoring
+2024-07-20 17:58:46,149 INFO    SystemMonitor:90596 [interfaces.py:start():188] Started memory monitoring
+2024-07-20 17:58:46,153 INFO    SystemMonitor:90596 [interfaces.py:start():188] Started network monitoring
+2024-07-20 17:58:46,266 DEBUG   HandlerThread:90596 [system_info.py:probe():152] Probing system
+2024-07-20 17:58:46,269 DEBUG   HandlerThread:90596 [system_info.py:_probe_git():137] Probing git
+2024-07-20 17:58:46,279 DEBUG   HandlerThread:90596 [system_info.py:_probe_git():145] Probing git done
+2024-07-20 17:58:46,279 DEBUG   HandlerThread:90596 [system_info.py:probe():200] Probing system done
+2024-07-20 17:58:46,279 DEBUG   HandlerThread:90596 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-113-generic-x86_64-with-glibc2.31', 'python': '3.10.14', 'heartbeatAt': '2024-07-20T15:58:46.266454', 'startedAt': '2024-07-20T15:58:45.489154', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py', 'codePathLocal': 'mgpu_ppre_t_grad.py', 'codePath': 'NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py', 'git': {'remote': 'https://github.com/jiantangethz/NCA_Solidification.git', 'commit': '5ded2bad6ac46ea20638a5d6b9b93ae32d11f22f'}, 'email': 'jiatang@student.ethz.ch', 'root': '/local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification', 'host': 'mavt-pcm-w104l.d.ethz.ch', 'username': 'jiatang', 'executable': '/local/home/jiatang/miniconda3/envs/pytorch/bin/python', 'cpu_count': 48, 'cpu_count_logical': 96, 'cpu_freq': {'current': 2953.995708333334, 'min': 1200.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 1200.126, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1202.925, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1818.077, 'min': 1200.0, 'max': 4000.0}, {'current': 1618.973, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3000.0, 'min': 1200.0, 'max': 4000.0}], 'disk': {'/': {'total': 936.7875633239746, 'used': 867.809455871582}}, 'gpu': 'NVIDIA RTX A5000', 'gpu_count': 3, 'gpu_devices': [{'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}, {'name': 'NVIDIA RTX A5000', 'memory_total': 25757220864}], 'memory': {'total': 251.49363708496094}}
+2024-07-20 17:58:46,280 INFO    HandlerThread:90596 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-20 17:58:46,280 INFO    HandlerThread:90596 [system_monitor.py:probe():227] Publishing system info
+2024-07-20 17:58:46,280 DEBUG   HandlerThread:90596 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-20 17:58:46,939 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_created():271] file/dir created: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/conda-environment.yaml
+2024-07-20 17:58:48,803 DEBUG   HandlerThread:90596 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-20 17:58:48,805 INFO    HandlerThread:90596 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-20 17:58:48,809 DEBUG   SenderThread:90596 [sender.py:send():379] send: files
+2024-07-20 17:58:48,809 INFO    SenderThread:90596 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-20 17:58:48,931 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-20 17:58:48,932 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-20 17:58:48,932 DEBUG   SenderThread:90596 [sender.py:send_request():406] send_request: python_packages
+2024-07-20 17:58:48,933 DEBUG   SenderThread:90596 [sender.py:send_request():406] send_request: stop_status
+2024-07-20 17:58:48,937 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:48,938 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/conda-environment.yaml
+2024-07-20 17:58:48,938 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_created():271] file/dir created: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/requirements.txt
+2024-07-20 17:58:48,939 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_created():271] file/dir created: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/wandb-metadata.json
+2024-07-20 17:58:49,248 DEBUG   SenderThread:90596 [sender.py:send():379] send: telemetry
+2024-07-20 17:58:49,518 INFO    wandb-upload_0:90596 [upload_job.py:push():130] Uploaded file /tmp/tmptlwmj7i2wandb/yrxj2l7d-wandb-metadata.json
+2024-07-20 17:58:49,933 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:50,933 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:51,249 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:58:51,933 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:52,933 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:53,934 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:54,935 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:55,936 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:56,934 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:56,935 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:58:57,940 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:58,939 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:58:59,941 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:00,940 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:01,940 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:01,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:02,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:03,935 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-20 17:59:03,937 DEBUG   SenderThread:90596 [sender.py:send_request():406] send_request: stop_status
+2024-07-20 17:59:03,978 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:04,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:05,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:06,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:07,176 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:07,941 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:08,941 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:09,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:10,945 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:11,944 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:12,940 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:12,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:13,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:14,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:15,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:16,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:17,942 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:18,402 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:18,948 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-20 17:59:18,953 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:18,980 DEBUG   SenderThread:90596 [sender.py:send_request():406] send_request: stop_status
+2024-07-20 17:59:19,044 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/config.yaml
+2024-07-20 17:59:19,044 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_created():271] file/dir created: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/output.log
+2024-07-20 17:59:19,944 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:20,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:21,042 INFO    Thread-12 :90596 [dir_watcher.py:_on_file_modified():288] file/dir modified: /local/scratch/PycharmProjects/loss_grad/NCA_v2/NCA_Solidification/NCA_v2/RegP_classEA_t_encode_diCNN/3EA/3D/JIan_data/adddata_5l256_dp0.5/Setup_0/wandb/run-20240720_175845-ac58ryct/files/output.log
+2024-07-20 17:59:21,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:22,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:23,935 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:23,943 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:24,944 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:25,944 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:26,944 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:27,945 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:28,935 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:28,945 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:29,945 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:30,945 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-20 17:59:33,936 DEBUG   HandlerThread:90596 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 17:59:34,130 INFO    MainThread:90596 [internal.py:handle_exit():75] Internal process exited

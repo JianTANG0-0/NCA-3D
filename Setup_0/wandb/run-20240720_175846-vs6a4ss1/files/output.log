@@ -1,0 +1,6 @@
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 264.00 MiB. GPU  (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 520.00 MiB. GPU  (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(
+/local/home/jiatang/miniconda3/envs/pytorch/lib/python3.10/site-packages/torch/nn/modules/conv.py:605: UserWarning: Plan failed with an OutOfMemoryError: CUDA out of memory. Tried to allocate 776.00 MiB. GPU  (Triggered internally at /opt/conda/conda-bld/pytorch_1712608839953/work/aten/src/ATen/native/cudnn/Conv_v8.cpp:924.)
+  return F.conv3d(

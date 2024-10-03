@@ -1,0 +1,366 @@
+{
+    "os": "Linux-5.15.0-113-generic-x86_64-with-glibc2.35",
+    "python": "3.11.6",
+    "heartbeatAt": "2024-07-19T01:20:04.685689",
+    "startedAt": "2024-07-19T01:20:04.462450",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/cluster/scratch/jiatang/work/NCA/adddata_5l256_dp0.5/mgpu_ppre_t_grad.py",
+    "codePathLocal": "mgpu_ppre_t_grad.py",
+    "codePath": "mgpu_ppre_t_grad.py",
+    "host": "eu-ts-02",
+    "username": "jiatang",
+    "executable": "/cluster/software/stacks/2024-06/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-12.2.0/python-3.11.6-ukhwpjnwzzzizek3pgr75zkbhxros5fq/bin/python",
+    "cpu_count": 64,
+    "cpu_count_logical": 64,
+    "cpu_freq": {
+        "current": 1680.0135937499997,
+        "min": 1500.0,
+        "max": 3250.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1497.336,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 2612.307,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1497.66,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 2845.549,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 3250.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 2676.876,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 2845.55,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1497.657,
+            "min": 1500.0,
+            "max": 3250.0
+        },
+        {
+            "current": 1500.0,
+            "min": 1500.0,
+            "max": 3250.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 10.0,
+            "used": 5.943206787109375
+        }
+    },
+    "gpu": "NVIDIA A100 80GB PCIe",
+    "gpu_count": 2,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100 80GB PCIe",
+            "memory_total": 85899345920
+        },
+        {
+            "name": "NVIDIA A100 80GB PCIe",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 1503.2741813659668
+    }
+}
