@@ -177,6 +177,6 @@ if __name__ == "__main__":
     s = [8, 16, 24, 4,16,28, 8, 16, 24]
     # read the data file
     for i in range(1,2):
-        data = np.load('./dirsoild_4.npy', allow_pickle=True)[i:i+1, ::2, ..., :-1]
+        data = np.load('../dirsoild_4.npy', allow_pickle=True)[i:i + 1, ::2, ..., :-1]
         ini_t = [0]
         test_compare(data, d, s, ini_t, setup_properties)

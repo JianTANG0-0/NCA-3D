@@ -72,7 +72,7 @@ def evaluate_model(nx, ny, nz, cell_len, CHANNEL_N, ca, sp_rate, delta_t, run_n=
 
 
 # load the CRNN Model from file
-model_file = './Setup_0/'
+model_file = '../Setup_0/'
 ca = load_model(model_file)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 #ca = ca.to(device)

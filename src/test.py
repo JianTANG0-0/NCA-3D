@@ -199,7 +199,7 @@ if __name__ == '__main__':
     ca = ca.to(device)
     ca.eval()
 
-    nca_train_data = np.load('./dirsoild_4.npy', allow_pickle=True)[:, ::2, ..., :-1]
+    nca_train_data = np.load('../dirsoild_4.npy', allow_pickle=True)[:, ::2, ..., :-1]
     nca_train_data = torch.from_numpy(nca_train_data)
     nca_train_data = nca_train_data.permute([0, 1, 5, 4, 2, 3]).type(torch.FloatTensor)
     batch_size = 1

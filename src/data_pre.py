@@ -8,15 +8,20 @@ def read_dat_files(data_folder):
     for filename in os.listdir(data_folder):
         if filename.endswith('.dat'):
             file_path = os.path.join(data_folder, filename)
-            data = np.loadtxt(file_path, delimiter=',')
-            all_data.append(data)
-            filenames.append(filename)
+            try:
+                # Attempt to load the file
+                data = np.loadtxt(file_path, delimiter=',')
+                all_data.append(data)
+                filenames.append(filename)
+            except ValueError as e:
+                # Print the error and skip the file if it causes issues
+                print(f"Skipping file {filename} due to error: {e}")
+
     return all_data, filenames
 
 
 def process_data(data, time_steps, x_dim, y_dim, z_dim):
-    Fai = [      0, 2.7266,    3.8942,    4.8190,    5.6251,    6.3612,    7.0529,    7.7160,
-                 8.3621,    9.0000,    9.6379,   10.2840,   10.9471,   11.6388,   12.3749,   13.1810,   14.1058,   15.2734]
+    Fai = [      0, 1.3333,2.0,2.6667]
     value_to_class = {value: i for i, value in enumerate(Fai)}
 
     num_rows = data.shape[0]
@@ -53,7 +58,7 @@ def process_data(data, time_steps, x_dim, y_dim, z_dim):
     else:
         return None  # Skip this data if time steps > 22
 
-    return reshaped_data
+    return reshaped_data[:22:2, ..., :32, :]
 
 
 def concatenate_and_save(processed_data_list, file_count):
@@ -65,12 +70,12 @@ def concatenate_and_save(processed_data_list, file_count):
 
 def main():
     data_folder = 'data'
-    time_steps = 32
+    time_steps = 50
     x_dim, y_dim, z_dim = 32, 32, 64
     processed_data_list = []
     skipped_files = []
     file_counter = 0
-    save_counter = 1
+    save_counter = 5
 
     all_files_data, filenames = read_dat_files(data_folder)
 
